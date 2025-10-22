@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Proactive Dx - Revolutionary at-home blood testing for inflammation monitoring. Lab-grade results in 10 minutes from a single drop of blood.">
+    <meta name="keywords" content="at-home blood testing, inflammation biomarkers, point-of-care diagnostics, cytokines, IL-6, TNF-α">
+    <meta name="author" content="Proactive Dx">
+    
+    <!-- Mobile-specific meta tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Proactive Dx">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <title>Proactive Dx - Affordable & Personalized Healthcare</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <!-- Vertical Section Navigation -->
+    <nav class="section-nav" aria-label="Page sections navigation">
+        <div class="section-nav-line"></div>
+        <a href="#" class="section-nav-item" data-section="home">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="#healthcare-broken" class="section-nav-item" data-section="healthcare-broken">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Problem</span>
+        </a>
+        <a href="#product" class="section-nav-item" data-section="product">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Our Solution</span>
+        </a>
+        <a href="#impact" class="section-nav-item" data-section="impact">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Impact</span>
+        </a>
+        <a href="#why-inflammation" class="section-nav-item" data-section="why-inflammation">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Inflammation</span>
+        </a>
+        <a href="#use-cases" class="section-nav-item" data-section="use-cases">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Use Cases</span>
+        </a>
+        <a href="#about" class="section-nav-item" data-section="about">
+            <span class="nav-dot"></span>
+            <span class="nav-label">About Us</span>
+        </a>
+    </nav>
+    
+    <header class="hero-section">
+        <div class="logo">
+            <h1 class="brand-name">
+                Proactive <span class="health">Dx</span>
+            </h1>
+        </div>
+        
+        <p class="tagline">
+            We are giving everyone 10+ more healthy years with affordable & proactive inflammation monitoring
+        </p>
+        
+        <div class="cta-container">
+            <a href="#healthcare-broken" class="cta-button secondary" role="button" aria-label="Learn more about our products">Learn More</a>
+        </div>
+        
+        <div class="scroll-indicator" role="button" tabindex="0" aria-label="Scroll to explore content">
+            Scroll to explore
+            <span class="scroll-arrow" aria-hidden="true"></span>
+        </div>
+    </header>
+
+    <main class="content-sections">
+        <!-- Healthcare is Broken Section -->
+        <section class="section healthcare-broken-section" id="healthcare-broken">
+            <h2>Healthcare is Broken</h2>
+            <p class="section-subtitle">Costs skyrocket but healthspan and lifespan are decreasing</p>
+            
+            <div class="broken-healthcare-grid">
+                <div class="broken-healthcare-card" data-expanded="false">
+                    <div class="broken-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Rising Healthcare Costs</h3>
+                    <p class="card-preview">U.S. healthcare spending reached $4.5 trillion in 2024, representing 17.3% of GDP - more than any other developed nation. The average American now spends over $13,000 annually on healthcare...</p>
+                    <p class="card-full">U.S. healthcare spending reached $4.5 trillion in 2024, representing 17.3% of GDP - more than any other developed nation. The average American now spends over $13,000 annually on healthcare, with costs rising 4-6% per year. Despite this massive investment, Americans face mounting medical debt, with 100 million people struggling to pay medical bills. The system prioritizes reactive treatment over prevention, leading to skyrocketing costs for managing preventable chronic diseases.</p>
+                    <button class="expand-btn" aria-label="Expand to read more">
+                        <span class="expand-text">Read More</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="broken-healthcare-card" data-expanded="false">
+                    <div class="broken-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Decreasing Life Expectancy</h3>
+                    <p class="card-preview">For the first time in a century, U.S. life expectancy has declined for three consecutive years, dropping to 76.4 years - the lowest since 1996. This places America behind 40+ other countries...</p>
+                    <p class="card-full">For the first time in a century, U.S. life expectancy has declined for three consecutive years, dropping to 76.4 years - the lowest since 1996. This places America behind 40+ other countries, including Cuba and Estonia. The causes are largely preventable: chronic inflammation-related diseases, metabolic disorders, and cardiovascular disease account for most premature deaths. Meanwhile, countries spending less on healthcare but investing more in prevention see their life expectancy continue to rise.</p>
+                    <button class="expand-btn" aria-label="Expand to read more">
+                        <span class="expand-text">Read More</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="broken-healthcare-card" data-expanded="false">
+                    <div class="broken-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Reduced Healthspan</h3>
+                    <p class="card-preview">While total lifespan decreases, healthspan - the years lived in good health - is declining even faster. Americans now spend an average of 12-14 years living with chronic disease and disability before death...</p>
+                    <p class="card-full">While total lifespan decreases, healthspan - the years lived in good health - is declining even faster. Americans now spend an average of 12-14 years living with chronic disease and disability before death. Nearly 60% of adults have at least one chronic condition, and 42% have two or more. Inflammatory diseases like diabetes, heart disease, arthritis, and Alzheimer's rob people of quality life decades before death. The current healthcare system waits until disease is advanced rather than catching and preventing inflammation-driven disease early.</p>
+                    <button class="expand-btn" aria-label="Expand to read more">
+                        <span class="expand-text">Read More</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Overview Section -->
+        <section class="section" id="product">
+            <h2>Affordable, Proactive Inflammation Monitoring</h2>
+            <p class="section-subtitle">Revolutionary point-of-care diagnostics delivering lab-grade inflammatory biomarker analysis from a single drop of blood in under 10 minutes. Fast, affordable, and convenient testing from your home - no clinic visits, no wait times, just instant health insights.</p>
+            
+            <div class="product-overview">
+                <div class="product-image-container">
+                    <img src="images/proactive-dx-device.png" alt="Proactive Dx at-home blood testing device" loading="lazy">
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">$10</span>
+                        <div class="stat-label">per test</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10 min</span>
+                        <div class="stat-label">sample to result time</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">90%</span>
+                        <div class="stat-label">precision accuracy</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">32</span>
+                        <div class="stat-label">Up to 32 Biomarkers multiplexed</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Impact Section -->
+        <section class="section impact-section" id="impact">
+            <h2>The Impact</h2>
+            <p class="section-subtitle">High-frequency, affordable cytokine monitoring transforms healthcare from reactive to proactive by enabling early detection and personalized baselines.</p>
+            
+            <div class="impact-grid">
+                <!-- Inflammation as an Early Detector -->
+                <div class="impact-category">
+                    <h3>Inflammation as an Early Detector</h3>
+                    <p class="impact-subtitle">Making cytokines rapid and affordable at point-of-care (previously only available in research labs at high cost)</p>
+                    <div class="impact-cards">
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h4>Early Detection</h4>
+                            <p>Cytokines appear hours before clinical symptoms across infections, radiation exposure, toxin exposure, and disease progression</p>
+                        </div>
+                        
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h4>Broad Applicability</h4>
+                            <p>The same 5-marker panel provides insights across 50+ conditions—sepsis, COVID-19, autoimmune disease, cancer, cardiovascular disease, aging</p>
+                        </div>
+                        
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4>Threat-Agnostic</h4>
+                            <p>Cytokine signatures indicate something is wrong even when you don't know what the threat is yet (unlike pathogen-specific tests)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- High-Frequency Monitoring -->
+                <div class="impact-category">
+                    <h3>High-Frequency Monitoring</h3>
+                    <p class="impact-subtitle">High frequency testing is mandatory for personalized and proactive healthcare of any kind, and for this to work it needs to be easy to do</p>
+                    <div class="impact-cards">
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 3v18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 17V9M13 17v-6M8 17v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4>Makes Data More Powerful</h4>
+                            <p>Cytokine signatures change rapidly over hours to days, requiring frequent measurement to be clinically useful. Existing solutions cannot do this.</p>
+                        </div>
+                        
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h4>Establishes Personal Baselines</h4>
+                            <p>Regular testing reveals your unique inflammatory patterns, making it easier to detect meaningful changes that signal health issues specific to you</p>
+                        </div>
+                        
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polyline points="22 4 12 14.01 9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4>Increases Analysis Accuracy</h4>
+                            <p>Multiple data points over time provide context that single snapshots cannot, reducing false positives and revealing true health trends</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Inflammation Section -->
+        <section class="section" id="why-inflammation">
+            <h2>Why Inflammation</h2>
+            <p class="section-subtitle">Understanding your body's inflammatory response provides critical insights into your health status, disease risk, and treatment effectiveness across multiple conditions.</p>
+            
+            <!-- Cytokine Navigation -->
+            <div class="cytokine-nav" role="tablist" aria-label="Cytokine information selector">
+                <button class="cytokine-tab active" data-cytokine="il6" role="tab" aria-selected="true" aria-controls="il6-content">IL-6</button>
+                <button class="cytokine-tab" data-cytokine="tnfa" role="tab" aria-selected="false" aria-controls="tnfa-content">TNF-α</button>
+                <button class="cytokine-tab" data-cytokine="il1b" role="tab" aria-selected="false" aria-controls="il1b-content">IL-1β</button>
+                <button class="cytokine-tab" data-cytokine="ifng" role="tab" aria-selected="false" aria-controls="ifng-content">IFN-γ</button>
+                <button class="cytokine-tab" data-cytokine="il10" role="tab" aria-selected="false" aria-controls="il10-content">IL-10</button>
+            </div>
+
+            <div class="cytokine-showcase">
+                <!-- Left side: Information -->
+                <div class="cytokine-info">
+                    <div class="cytokine-content active" data-cytokine="il6" id="il6-content" role="tabpanel" aria-labelledby="il6-tab">
+                        <p class="cytokine-summary">IL-6 is a key inflammatory mediator that plays crucial roles in immune response, metabolism, and tissue repair processes.</p>
+                        <h4>Key Applications:</h4>
+                        <ul>
+                            <li>Depression and mood disorder monitoring</li>
+                            <li>Cardiovascular disease risk assessment</li>
+                            <li>Autoimmune disease activity tracking</li>
+                            <li>Post-exercise recovery monitoring</li>
+                            <li>Aging and inflammaging indicators</li>
+                            <li>Cancer-related inflammation detection</li>
+                        </ul>
+                    </div>
+
+                    <div class="cytokine-content" data-cytokine="tnfa" id="tnfa-content" role="tabpanel" aria-labelledby="tnfa-tab">
+                        <p class="cytokine-summary">TNF-α is a potent pro-inflammatory cytokine central to immune system activation and chronic inflammatory conditions.</p>
+                        <h4>Key Applications:</h4>
+                        <ul>
+                            <li>Rheumatoid arthritis and autoimmune monitoring</li>
+                            <li>IBD and gastrointestinal inflammation</li>
+                            <li>Metabolic syndrome and insulin resistance</li>
+                            <li>Sepsis and acute infection detection</li>
+                            <li>Anti-TNF therapy effectiveness monitoring</li>
+                            <li>Neuroinflammation assessment</li>
+                        </ul>
+                    </div>
+
+                    <div class="cytokine-content" data-cytokine="il1b" id="il1b-content" role="tabpanel" aria-labelledby="il1b-tab">
+                        <p class="cytokine-summary">IL-1β is a master regulator of inflammation, driving fever, acute phase responses, and tissue damage in various diseases.</p>
+                        <h4>Key Applications:</h4>
+                        <ul>
+                            <li>Acute infection and fever monitoring</li>
+                            <li>Gout and crystal arthropathy detection</li>
+                            <li>Alzheimer's and neurodegeneration tracking</li>
+                            <li>Post-surgical inflammation assessment</li>
+                            <li>Autoinflammatory syndrome monitoring</li>
+                            <li>Wound healing and tissue repair</li>
+                        </ul>
+                    </div>
+
+                    <div class="cytokine-content" data-cytokine="ifng" id="ifng-content" role="tabpanel" aria-labelledby="ifng-tab">
+                        <p class="cytokine-summary">IFN-γ is a critical immune activator that enhances pathogen clearance and regulates adaptive immune responses.</p>
+                        <h4>Key Applications:</h4>
+                        <ul>
+                            <li>Viral and intracellular infection monitoring</li>
+                            <li>Tuberculosis and mycobacterial detection</li>
+                            <li>Cancer immunotherapy response tracking</li>
+                            <li>Autoimmune disease activity assessment</li>
+                            <li>Vaccine response evaluation</li>
+                            <li>Immunodeficiency screening</li>
+                        </ul>
+                    </div>
+
+                    <div class="cytokine-content" data-cytokine="il10" id="il10-content" role="tabpanel" aria-labelledby="il10-tab">
+                        <p class="cytokine-summary">IL-10 is a powerful anti-inflammatory cytokine that regulates immune responses and promotes tissue healing.</p>
+                        <h4>Key Applications:</h4>
+                        <ul>
+                            <li>Treatment response monitoring</li>
+                            <li>Immune system balance assessment</li>
+                            <li>Post-infection recovery tracking</li>
+                            <li>Chronic fatigue and burnout evaluation</li>
+                            <li>Allergic reaction monitoring</li>
+                            <li>Pregnancy and maternal health</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right side: Cytokine highlight -->
+                <div class="cytokine-display" aria-live="polite" aria-label="Cytokine visualization">
+                    <div class="cytokine-highlight active" data-cytokine="il6">
+                        <span class="cytokine-name">IL-6</span>
+                        <div class="cytokine-label">Interleukin-6</div>
+                    </div>
+
+                    <div class="cytokine-highlight" data-cytokine="tnfa">
+                        <span class="cytokine-name">TNF-α</span>
+                        <div class="cytokine-label">Tumor Necrosis Factor Alpha</div>
+                    </div>
+
+                    <div class="cytokine-highlight" data-cytokine="il1b">
+                        <span class="cytokine-name">IL-1β</span>
+                        <div class="cytokine-label">Interleukin-1 Beta</div>
+                    </div>
+
+                    <div class="cytokine-highlight" data-cytokine="ifng">
+                        <span class="cytokine-name">IFN-γ</span>
+                        <div class="cytokine-label">Interferon Gamma</div>
+                    </div>
+
+                    <div class="cytokine-highlight" data-cytokine="il10">
+                        <span class="cytokine-name">IL-10</span>
+                        <div class="cytokine-label">Interleukin-10</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section class="section">
+            <h2>Revolutionary Point-of-Care Diagnostics</h2>
+            
+            <p>Proactive Dx delivers lab-grade inflammatory biomarker analysis from a single drop of blood in under 10 minutes. Our silicon photonic biosensor platform transforms how we monitor, prevent, diagnose, and manage inflammation-driven conditions.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <div class="feature-header">
+                        <h3>Rapid<br>Results</h3>
+                    </div>
+                    <p>Get lab-comparable results from a finger-prick blood sample in under 10 minutes, eliminating the need for clinic visits and long turnaround times.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                            <path d="M12 6v6l4 2"/>
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v2"/>
+                            <path d="M12 21v2"/>
+                            <path d="M4.22 4.22l1.42 1.42"/>
+                            <path d="M18.36 18.36l1.42 1.42"/>
+                            <path d="M1 12h2"/>
+                            <path d="M21 12h2"/>
+                            <path d="M4.22 19.78l1.42-1.42"/>
+                            <path d="M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <div class="feature-header">
+                        <h3>Comprehensive Profiling</h3>
+                    </div>
+                    <p>Simultaneous quantification of multiple inflammatory biomarkers including IL-1β, IL-6, TNF-α, IFN-γ, and IL-10 from a single test.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <div class="feature-header">
+                        <h3>Point-of-Care Access</h3>
+                    </div>
+                    <p>Use anywhere with our portable device - at home, in clinics, or at the office. No training required with our simple 4-step process.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="7.5,4.21 12,6.81 16.5,4.21"/>
+                            <polyline points="7.5,19.79 7.5,14.6 3,12"/>
+                            <polyline points="21,12 16.5,14.6 16.5,19.79"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <div class="feature-header">
+                        <h3>AI-Driven<br>Insights</h3>
+                    </div>
+                    <p>Cloud connectivity with intelligent analysis, longitudinal tracking, and personalized health recommendations powered by advanced AI.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <div class="feature-header">
+                        <h3>Affordable Healthcare</h3>
+                    </div>
+                    <p>Low-cost instrument ($300) and cartridges ($3-20) make continuous health monitoring accessible to everyone.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <div class="feature-header">
+                        <h3>Connected Experience</h3>
+                    </div>
+                    <p>Seamless mobile app integration, EMR compatibility, and telemedicine support for comprehensive healthcare management.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="use-cases-section" id="use-cases">
+            <div class="use-cases-header">
+                <h2>Transforming Healthcare<br>Across Every Setting</h2>
+                <p class="section-subtitle">From clinical applications to wellness monitoring and cutting-edge research, our platform serves diverse healthcare needs worldwide. Real-time inflammatory biomarker data enables precise diagnosis, treatment optimization, and breakthrough scientific discoveries.</p>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <!-- Clinical Slide -->
+                    <div class="slide">
+                        <h3>Clinical Applications</h3>
+                        <p>Revolutionizing patient care with real-time inflammatory biomarker monitoring that enables precise diagnosis, treatment optimization, and improved patient outcomes.</p>
+                        <div class="use-cases-grid">
+                            <div class="use-case-item">
+                                <h4>Depression Treatment</h4>
+                                <p>Monitor IL-6, TNF-α, and IL-1β levels to optimize therapy selection and guide anti-inflammatory interventions.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Cardiovascular Health</h4>
+                                <p>Monitor elevated CRP and IL-6 levels for atherosclerosis risk assessment and post-MI secondary prevention strategies.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Autoimmune Disease</h4>
+                                <p>Track disease activity in RA, lupus, and IBD through inflammatory panels and predict flares early.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Infection Detection</h4>
+                                <p>Rapidly identify systemic infections through elevated inflammation markers for sepsis assessment.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Cancer Monitoring</h4>
+                                <p>Track tumor-related inflammation and assess immunotherapy effectiveness through real-time immune activity profiling.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Neurological Health</h4>
+                                <p>Monitor neuroinflammation linked to Alzheimer's and Parkinson's for early intervention and cognitive decline prevention.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wellness Slide -->
+                    <div class="slide">
+                        <h3>Wellness & Prevention</h3>
+                        <p>Empower individuals to take control of their health with continuous monitoring that supports proactive wellness strategies and lifestyle optimization.</p>
+                        <div class="use-cases-grid">
+                            <div class="use-case-item">
+                                <h4>Stress & Recovery</h4>
+                                <p>Monitor cortisol-inflammation interactions to assess stress and guide recovery protocols.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Aging & Longevity</h4>
+                                <p>Track chronic low-grade inflammation ("inflammaging") and monitor CRP and IL-6 levels to support healthy aging strategies.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Athletic Performance</h4>
+                                <p>Monitor recovery from exercise, identify overtraining risk, and guide training load adjustments for optimal athletic performance.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Metabolic Health</h4>
+                                <p>Track inflammation linked to obesity and insulin resistance through TNF-α and adiponectin monitoring.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Digestive Health</h4>
+                                <p>Assess gastrointestinal inflammation through markers comparable to fecal calprotectin for digestive wellness monitoring.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Respiratory Health</h4>
+                                <p>Monitor asthma and COPD activity through inflammatory marker tracking to predict and prevent respiratory issues.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- R&D Slide -->
+                    <div class="slide">
+                        <h3>Research & Development</h3>
+                        <p>Accelerating scientific discovery and drug development with precise, real-time biomarker data that enables breakthrough research and personalized medicine.</p>
+                        <div class="use-cases-grid">
+                            <div class="use-case-item">
+                                <h4>Clinical Trial Monitoring</h4>
+                                <p>Enable decentralized trials with real-time biomarker tracking, reducing costs and improving participation.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Biomarker Discovery</h4>
+                                <p>Accelerate identification and validation of novel inflammatory biomarkers for diagnosis and treatment.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Personalized Medicine</h4>
+                                <p>Develop individual inflammatory profiles for precision treatment approaches and treatment response optimization research.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Drug Efficacy Studies</h4>
+                                <p>Monitor real-time drug effects on inflammatory pathways to optimize dosing, timing, and combination therapy approaches.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Population Health</h4>
+                                <p>Large-scale studies tracking inflammatory patterns across populations for public health insights and interventions.</p>
+                            </div>
+                            <div class="use-case-item">
+                                <h4>Academic Research</h4>
+                                <p>Support university research programs with accessible biomarker analysis for inflammation-focused studies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="slider-nav prev" id="prevBtn" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <button class="slider-nav next" id="nextBtn" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="slider-dots" role="tablist" aria-label="Slide navigation">
+                    <button class="dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Go to slide 1: Clinical Applications"></button>
+                    <button class="dot" data-slide="1" role="tab" aria-selected="false" aria-label="Go to slide 2: Wellness & Prevention"></button>
+                    <button class="dot" data-slide="2" role="tab" aria-selected="false" aria-label="Go to slide 3: Research & Development"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Proactive Dx</h2>
+            
+            <p>We're revolutionizing healthcare by democratizing access to critical inflammatory biomarker testing. With chronic inflammatory diseases causing over 50% of global deaths, our mission is to put powerful diagnostic tools directly in the hands of patients and providers.</p>
+
+            <!-- Team Section -->
+            <h3>Team</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/reuven-duer.jpg" alt="Reuven Duer, Ph.D., Founder and CTO" loading="lazy" />
+                    </div>
+                    <h4>Reuven Duer, Ph.D.</h4>
+                    <p class="team-title">Founder, CTO</p>
+                    <p class="team-summary">Lifelong medical device engineer who led medical engineering teams and founded Proactive Dx with breakthrough silicon photonic biosensor technology.</p>
+                    <a href="https://www.linkedin.com/in/reuvenduer/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="Visit Reuven Duer's LinkedIn profile">LinkedIn Profile →</a>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/dylan-brownstein.jpg" alt="Dylan Brownstein, Cofounder and CEO" loading="lazy" />
+                    </div>
+                    <h4>Dylan Brownstein</h4>
+                    <p class="team-title">Cofounder, CEO</p>
+                    <p class="team-summary">Led U.S. hardware & AI investments at Karcher, consulted for Google, Reddit, and YMCA. Previous founder at Prosper and Light Theory.</p>
+                    <a href="https://www.linkedin.com/in/dylan-brownstein/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="Visit Dylan Brownstein's LinkedIn profile">LinkedIn Profile →</a>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/aren-giske.jpg" alt="Aren Giske, M.D., Chief Operating Officer" loading="lazy" />
+                    </div>
+                    <h4>Aren Giske, M.D.</h4>
+                    <p class="team-title">Chief Operating Officer</p>
+                    <p class="team-summary">Medical director with extensive experience in occupational & environmental medicine. Board member at Kadlec Medical and proven operations leader.</p>
+                    <a href="https://www.linkedin.com/in/arengiske/" target="_blank" rel="noopener noreferrer" class="linkedin-link" aria-label="Visit Aren Giske's LinkedIn profile">LinkedIn Profile →</a>
+                </div>
+            </div>
+
+            <!-- Technology & Clinical Applications Grid -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Our Technology</h3>
+                    <p>Our proprietary silicon photonic biosensor platform uses advanced optical detection to measure cytokines - the language of our immune system. This breakthrough technology delivers laboratory-quality results with the convenience of at-home testing, enabling real-time health monitoring and personalized care.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Clinical Applications</h3>
+                    <p>From optimizing depression treatment through inflammatory profiling to monitoring cardiovascular health, autoimmune diseases, and aging biomarkers, our platform serves diverse healthcare needs. We're particularly focused on treatment-resistant depression, where inflammatory markers can guide therapy selection and improve patient outcomes.</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Transform Healthcare?</h3>
+                <p>Join thousands of early adopters who are revolutionizing their health monitoring with cutting-edge inflammation diagnostics.</p>
+                <div class="contact-info">
+                     <p>Contact: <a href="mailto:dylan@pro-dx.com" class="contact-link" aria-label="Send email to Dylan at Proactive Dx">dylan@pro-dx.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
